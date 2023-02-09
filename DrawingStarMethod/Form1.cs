@@ -27,13 +27,10 @@ namespace DrawingStarMethod
 
             ///float size = Convert.ToSingle(sizeInput.Text); 
             
-
-            Graphics g = this.CreateGraphics();
+            Graphics g = this.CreateGraphics(); //for part 4 this gets moved to the custom methods.
             Pen blackPen = new Pen(Color.Black);
             
-
         }
-
 
         private void fillButton_Click(object sender, EventArgs e)
         {
@@ -42,7 +39,8 @@ namespace DrawingStarMethod
 
         public void DrawStar(Pen starPen, float x, float y, float pixels)
         {
-  
+
+
         }
 
     }
