@@ -50,6 +50,10 @@ namespace DrawingStarMethod
 
 
             g.DrawPolygon(blackPen,points); ;
+
+            Single xPosition = Convert.ToSingle(xInput.Text);
+            Single yPosition = Convert.ToSingle(xInput.Text);
+            Single[] positionOutput = new Single[2];
             
         }
 
@@ -70,13 +74,14 @@ namespace DrawingStarMethod
             Point[] points = { point1, point2, point3, point4, point5, point6, point7, point8, point9, point10 };
 
             Brush fillBrush = new SolidBrush(Color.Black);
-            //g.fillPolygon(fillBrush, points);
+            g.FillPolygon(fillBrush, points);
             
         }
 
         public void DrawStar(Pen starPen, float x, float y, float pixels)
         {
-
+            Graphics g = this.CreateGraphics(); //for part 4 this gets moved to the custom methods.
+            Pen blackPen = new Pen(Color.Black);
 
         }
 
